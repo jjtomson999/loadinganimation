@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="loader"></div>
+
+
+  <style>
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .loader{
+      width: 300px;
+      height: 300px;
+      border-bottom: red;
+      border-top: blue;
+      border-left: green;
+      border-right: yellow;
+      border-width: 10px;
+      border-style: solid;
+      border-radius: 50%;
+      animation-name:loader;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-delay: 1s;
+
+    }
+    @keyframes loader{
+       100%{
+         transform: rotate(360deg);
+      }
+    }
+
+  </style>
+</body>
+</html>
